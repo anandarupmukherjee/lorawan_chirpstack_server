@@ -1,0 +1,830 @@
+[
+    {
+        "id": "a9a3ef0e4d46aaf2",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0fc4dc09bf1450eb",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5162bd452d7ea5e3",
+        "type": "mqtt-broker",
+        "name": "Device connect",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1a643e1ab8480aed",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#ff1900",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#ff1900",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ff1900",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff5e4d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#ff1900",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "LoRaWAN Data Collector",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7d471d13e32cec86",
+        "type": "ui_tab",
+        "name": "Visualization",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "64c97b7c52b36892",
+        "type": "ui_group",
+        "name": "Shoestring LoRaWAN",
+        "tab": "7d471d13e32cec86",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "36865eb9307c86dc",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.247.46.156",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dbe28f9eb0463902",
+        "type": "mqtt in",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "",
+        "topic": "application/+/device/+/event/+",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5162bd452d7ea5e3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "e170a0f3ae5be822"
+            ]
+        ]
+    },
+    {
+        "id": "e170a0f3ae5be822",
+        "type": "device event",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "",
+        "eventType": "up",
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "65400767afbd6fc4"
+            ]
+        ]
+    },
+    {
+        "id": "5c58f0d843db3d40",
+        "type": "debug",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "Data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "65400767afbd6fc4",
+        "type": "json",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "afbe05672e66d356",
+                "4021fb216cc81c78",
+                "247763f273253164",
+                "fc1d261a788bdfc2"
+            ]
+        ]
+    },
+    {
+        "id": "afbe05672e66d356",
+        "type": "function",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "Decode data",
+        "func": "// Assuming the base64 encoded hex data is in msg.payload\nvar base64EncodedHex = msg.payload.data;\n\n// Decode from base64 to hex\nvar hex = Buffer.from(base64EncodedHex, 'base64').toString('hex');\n\n// Convert hex to string\nvar result = '';\nfor (var i = 0; i < hex.length; i += 2) {\n    result += String.fromCharCode(parseInt(hex.slice(i, i + 2), 16));\n}\n\n// Set the result to the payload\nmsg.payload = result;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 240,
+        "wires": [
+            [
+                "a0d42a0cb0b9a243"
+            ]
+        ]
+    },
+    {
+        "id": "a0d42a0cb0b9a243",
+        "type": "function",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "Text",
+        "func": "// Assuming the hex data is in msg.payload\nvar hexString = msg.payload;\n\n// Convert hex to string\nvar result = '';\nfor (var i = 0; i < hexString.length; i += 2) {\n    result += String.fromCharCode(parseInt(hexString.slice(i, i + 2), 16));\n}\n\n// Set the result to the payload\nmsg.payload = result;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 240,
+        "wires": [
+            [
+                "5c58f0d843db3d40",
+                "3fc45014594cd2a9"
+            ]
+        ]
+    },
+    {
+        "id": "3fc45014594cd2a9",
+        "type": "ui_template",
+        "z": "a9a3ef0e4d46aaf2",
+        "group": "64c97b7c52b36892",
+        "name": "",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4021fb216cc81c78",
+        "type": "function",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "Decode addr",
+        "func": "// Assuming the base64 encoded hex data is in msg.payload\nvar base64EncodedHex = msg.payload.devAddr;\n\n// Decode from base64 to hex\nvar hex = Buffer.from(base64EncodedHex, 'base64').toString('hex');\n\n\n\n// Set the result to the payload\nmsg.payload = hex;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 180,
+        "wires": [
+            [
+                "f9082e5340a17b71",
+                "3fc45014594cd2a9"
+            ]
+        ]
+    },
+    {
+        "id": "f9082e5340a17b71",
+        "type": "debug",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "Addr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "247763f273253164",
+        "type": "debug",
+        "z": "a9a3ef0e4d46aaf2",
+        "name": "Raw Data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fc1d261a788bdfc2",
+        "type": "function",
+        "z": "a9a3ef0e4d46aaf2",
+        "d": true,
+        "name": "Rpi_M5_decoder",
+        "func": "function decodeBase64Json(msg) {\n    let decodedString;\n    const encodedData = msg;\n\n    // Check if encodedData is present\n    if (!encodedData) {\n        return { error: 'No data found in msg.payload.data' };\n    }\n\n    // Decode from base64\n    try {\n        const decodedBytes = Buffer.from(encodedData, 'base64');\n        decodedString = decodedBytes.toString('hex');\n    } catch (e) {\n        return { error: 'Error decoding base64', details: e.message };\n    }\n\n    \n}\n\n// Example usage (in a Node-RED function node)\n// Assuming msg.payload.data contains the base64 encoded string\nmsg = decodeBase64Json(msg.payload.data);\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 540,
+        "wires": [
+            [
+                "77b48b5ad928ac04"
+            ]
+        ]
+    },
+    {
+        "id": "a9a53747d04b5c39",
+        "type": "debug",
+        "z": "a9a3ef0e4d46aaf2",
+        "d": true,
+        "name": "Rpi_data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "77b48b5ad928ac04",
+        "type": "function",
+        "z": "a9a3ef0e4d46aaf2",
+        "d": true,
+        "name": "text",
+        "func": "function decodeBase64Json(msg) {\n    let decodedString;\n    const encodedData = msg;\n\n    // Check if encodedData is present\n    if (!encodedData) {\n        return { error: 'No data found in msg.payload.data' };\n    }\n\n    // Decode from base64\n    try {\n        const decodedBytes = Buffer.from(encodedData, 'base64');\n        decodedString = decodedBytes.toString('hex');\n    } catch (e) {\n        return { error: 'Error decoding base64', details: e.message };\n    }\n\n    \n}\n\n\n\nmsg = decodeBase64Json(msg.payload.data);\n// Assuming the hex data is in msg.payload\nvar hexString = msg;\n\n// Check if hexString is valid\nif (typeof hexString !== 'string' || hexString.length % 2 !== 0 || !/^[0-9a-fA-F]*$/.test(hexString)) {\n    return { error: 'Invalid hex string', hexString };\n}\n\n// Convert hex to string\nvar result = '';\nfor (var i = 0; i < hexString.length; i += 2) {\n    var part = hexString.slice(i, i + 2);\n    var charCode = parseInt(part, 16);\n    if (isNaN(charCode)) {\n        return { error: 'Invalid character in hex string', part, index: i };\n    }\n    result += String.fromCharCode(charCode);\n}\n\n// Try parsing the JSON string\ntry {\n    msg.payload = JSON.parse(result);\n} catch (e) {\n    msg.payload = { error: 'Error parsing JSON', result, details: e.message };\n}\n\n// Set the result to the payload and return msg\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 520,
+        "wires": [
+            [
+                "a9a53747d04b5c39"
+            ]
+        ]
+    },
+    {
+        "id": "7ada95c22edf5841",
+        "type": "mqtt in",
+        "z": "0fc4dc09bf1450eb",
+        "name": "",
+        "topic": "application/+/device/+/event/+",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5162bd452d7ea5e3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "b5279c7a2c37d352"
+            ]
+        ]
+    },
+    {
+        "id": "b5279c7a2c37d352",
+        "type": "device event",
+        "z": "0fc4dc09bf1450eb",
+        "name": "",
+        "eventType": "up",
+        "x": 470,
+        "y": 140,
+        "wires": [
+            [
+                "107ba6bc0510500e",
+                "3d294fa694ea03c3",
+                "3baa268d5e7278f5",
+                "268fa572a7d2e242",
+                "d748f34c8f21de2a",
+                "7643c2b22f5ac599"
+            ]
+        ]
+    },
+    {
+        "id": "37c67c3abf95b1ba",
+        "type": "debug",
+        "z": "0fc4dc09bf1450eb",
+        "name": "Raw Data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "107ba6bc0510500e",
+        "type": "function",
+        "z": "0fc4dc09bf1450eb",
+        "name": "decode rpi_msg",
+        "func": "// Assuming the encoded message is in msg.payload.data\nlet encodedString = msg.payload.data;\n\n// Base64 decode the message\nlet buff = Buffer.from(encodedString, 'base64');\nlet decodedString = buff.toString('utf-8');\n\n// Check if the decoded string is also base64 encoded\ntry {\n    buff = Buffer.from(decodedString, 'base64');\n    let doubleDecodedString = buff.toString('utf-8');\n\n    // Check if the result is a valid string (avoid decoding binary data)\n    if (doubleDecodedString && /^[ -~]+$/g.test(doubleDecodedString)) {\n        decodedString = doubleDecodedString;\n    }\n} catch (error) {\n    // If an error occurs, assume it's not double-encoded and use the original decoded string\n}\n\n// Set the decoded string to msg.payload\nmsg.payload = decodedString;\n\n// Return the modified message object\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 80,
+        "wires": [
+            [
+                "37c67c3abf95b1ba",
+                "c9970c5d0d89a128"
+            ]
+        ]
+    },
+    {
+        "id": "3d294fa694ea03c3",
+        "type": "debug",
+        "z": "0fc4dc09bf1450eb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ad8b481207aae8ed",
+        "type": "ui_template",
+        "z": "0fc4dc09bf1450eb",
+        "group": "64c97b7c52b36892",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n    <p>Temperature: {{msg.payload.temperature}} °C</p>\n    <p>Humidity: {{msg.payload.humidity}} %</p>\n    <p>Pressure: {{msg.payload.pressure}} hPa</p>\n    <p>Light Intensity: {{msg.payload.light}} Lux</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1380,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9970c5d0d89a128",
+        "type": "function",
+        "z": "0fc4dc09bf1450eb",
+        "name": "split readings",
+        "func": "let payload = msg.payload;\nif (payload.startsWith(\"t:\")) {\n    // Temperature data\n    msg.temperature = parseFloat(payload.substring(2));\n} else if (payload.startsWith(\"h:\")) {\n    // Humidity data\n    msg.humidity = parseFloat(payload.substring(2));\n} else if (payload.startsWith(\"p:\")) {\n    // Pressure data\n    msg.pressure = parseFloat(payload.substring(2));\n} else if (payload.startsWith(\"L:\")) {\n    // Pressure data\n    msg.light = parseFloat(payload.substring(2));\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 80,
+        "wires": [
+            [
+                "31c54a4ff07ece6b"
+            ]
+        ]
+    },
+    {
+        "id": "31c54a4ff07ece6b",
+        "type": "function",
+        "z": "0fc4dc09bf1450eb",
+        "name": "function 1",
+        "func": "// Storing the values in the flow context\nif (msg.temperature !== undefined) {\n    flow.set(\"temperature\", msg.temperature);\n} \nif (msg.humidity !== undefined) {\n    flow.set(\"humidity\", msg.humidity);\n}\nif (msg.pressure !== undefined) {\n    flow.set(\"pressure\", msg.pressure);\n}\nif (msg.light !== undefined) {\n    flow.set(\"light\", msg.light);\n}\n\n// Preparing the message payload with the latest stored values\nmsg.payload = {\n    temperature: flow.get(\"temperature\"),\n    humidity: flow.get(\"humidity\"),\n    pressure: flow.get(\"pressure\"),\n    light: flow.get(\"light\")\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 80,
+        "wires": [
+            [
+                "ad8b481207aae8ed",
+                "6cc3cd868ffe7bd0",
+                "8b2412a56f8cceac",
+                "3ecc8160d1324ed1"
+            ]
+        ]
+    },
+    {
+        "id": "6cc3cd868ffe7bd0",
+        "type": "ui_gauge",
+        "z": "0fc4dc09bf1450eb",
+        "name": "",
+        "group": "64c97b7c52b36892",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "celcius",
+        "format": "{{msg.payload.temperature}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#5be65b",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1390,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "8b2412a56f8cceac",
+        "type": "ui_gauge",
+        "z": "0fc4dc09bf1450eb",
+        "name": "",
+        "group": "64c97b7c52b36892",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{msg.payload.humidity}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#5be65b",
+            "#e6e600",
+            "#df1111"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1380,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "3ecc8160d1324ed1",
+        "type": "ui_gauge",
+        "z": "0fc4dc09bf1450eb",
+        "name": "",
+        "group": "64c97b7c52b36892",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "mPa",
+        "format": "{{msg.payload.pressure}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#5be65b",
+            "#e6e600",
+            "#df1111"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1380,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3baa268d5e7278f5",
+        "type": "ui_text",
+        "z": "0fc4dc09bf1450eb",
+        "group": "64c97b7c52b36892",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Device Name",
+        "format": "{{msg.payload.deviceInfo.deviceName}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1400,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "268fa572a7d2e242",
+        "type": "ui_text",
+        "z": "0fc4dc09bf1450eb",
+        "group": "64c97b7c52b36892",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Device ID",
+        "format": "{{msg.payload.deviceInfo.devEui}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1380,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1bb6fa82c21e0560",
+        "type": "ui_text",
+        "z": "0fc4dc09bf1450eb",
+        "group": "64c97b7c52b36892",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Date",
+        "format": "{{msg.payload.date}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1370,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d748f34c8f21de2a",
+        "type": "function",
+        "z": "0fc4dc09bf1450eb",
+        "name": "Split datetime",
+        "func": "// Ensure the timestamp is in msg.payload and is a string\nvar timestamp = msg.payload.time.toString();\n\n// Split the timestamp into date and time components\nvar parts = timestamp.split('T');\nvar date = parts[0];\nvar time = parts[1].split('+')[0]; // Removes the timezone offset\n\n// Set the date and time in the message payload\nmsg.payload = {\n    date: date,\n    time: time\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 220,
+        "wires": [
+            [
+                "1bb6fa82c21e0560",
+                "dd949cf5d2fdf162"
+            ]
+        ]
+    },
+    {
+        "id": "dd949cf5d2fdf162",
+        "type": "ui_text",
+        "z": "0fc4dc09bf1450eb",
+        "group": "64c97b7c52b36892",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time",
+        "format": "{{msg.payload.time}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ebae90159c0d32c9",
+        "type": "mqtt out",
+        "z": "0fc4dc09bf1450eb",
+        "name": "",
+        "topic": "shoestring",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "36865eb9307c86dc",
+        "x": 1350,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7643c2b22f5ac599",
+        "type": "function",
+        "z": "0fc4dc09bf1450eb",
+        "name": "mqtt_push_format",
+        "func": "// Assuming the JSON message is in msg.payload\nvar message = msg.payload;\n\n// Extracting devEui and data\nvar devEui = message.deviceInfo.devEui;\nvar devName = message.deviceInfo.deviceName;\n// var data = message.data;\n\n\n// Assuming the encoded message is in msg.payload.data\nlet encodedString = msg.payload.data;\n\n// Base64 decode the message\nlet buff = Buffer.from(encodedString, 'base64');\nlet decodedString = buff.toString('utf-8');\n\n// Check if the decoded string is also base64 encoded\ntry {\n    buff = Buffer.from(decodedString, 'base64');\n    let doubleDecodedString = buff.toString('utf-8');\n\n    // Check if the result is a valid string (avoid decoding binary data)\n    if (doubleDecodedString && /^[ -~]+$/g.test(doubleDecodedString)) {\n        decodedString = doubleDecodedString;\n    }\n} catch (error) {\n    // If an error occurs, assume it's not double-encoded and use the original decoded string\n}\n\n// Set the decoded string to msg.payload\nvar data = decodedString;\n\n\n\n\n// Formatting as a string\nvar formattedString = \"devEui: \" + devEui + \", device: \" + devName + \", data: \" + data;\n\n// Setting the formatted string to msg.payload\nmsg.payload = formattedString;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 440,
+        "wires": [
+            [
+                "ebae90159c0d32c9"
+            ]
+        ]
+    }
+]

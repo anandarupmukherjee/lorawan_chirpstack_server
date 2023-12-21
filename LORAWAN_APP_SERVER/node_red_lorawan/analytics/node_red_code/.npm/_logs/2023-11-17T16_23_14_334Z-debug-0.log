@@ -1,0 +1,451 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.19.4
+2 info using node@v16.20.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 5ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 3ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 8ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 1ms
+11 timing config:load:project Completed in 29ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 1ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 3ms
+15 timing config:load:global Completed in 4ms
+16 timing config:load:validate Completed in 1ms
+17 timing config:load:credentials Completed in 2ms
+18 timing config:load:setEnvs Completed in 2ms
+19 timing config:load Completed in 61ms
+20 timing npm:load:configload Completed in 61ms
+21 timing npm:load:mkdirpcache Completed in 3ms
+22 timing npm:load:mkdirplogs Completed in 1ms
+23 verbose title npm install node-red-dashboard@3.6.1
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-dashboard@3.6.1"
+25 timing npm:load:setTitle Completed in 5ms
+26 timing config:load:flatten Completed in 9ms
+27 timing npm:load:display Completed in 16ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-11-17T16_23_14_334Z-debug-0.log
+30 timing npm:load:logFile Completed in 17ms
+31 timing npm:load:timers Completed in 1ms
+32 timing npm:load:configScope Completed in 1ms
+33 timing npm:load Completed in 106ms
+34 timing arborist:ctor Completed in 2ms
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 367ms
+37 timing idealTree:userRequests Completed in 9ms
+38 silly idealTree buildDeps
+39 silly fetch manifest node-red-dashboard@3.6.1
+40 http fetch GET 200 https://registry.npmjs.org/node-red-dashboard 941ms (cache miss)
+41 silly placeDep ROOT node-red-dashboard@3.6.1 REPLACE for: node-red-project@0.0.1 want: 3.6.1
+42 timing idealTree:#root Completed in 980ms
+43 timing idealTree:node_modules/node-red-dashboard Completed in 0ms
+44 timing idealTree:buildDeps Completed in 985ms
+45 timing idealTree:fixDepFlags Completed in 5ms
+46 timing idealTree Completed in 1374ms
+47 timing reify:loadTrees Completed in 1376ms
+48 timing reify:diffTrees Completed in 10ms
+49 silly reify moves {}
+50 timing reify:retireShallow Completed in 5ms
+51 timing reify:createSparse Completed in 56ms
+52 timing reify:trashOmits Completed in 1ms
+53 timing reify:loadBundles Completed in 0ms
+54 silly tarball no local data for ws@https://registry.npmjs.org/ws/-/ws-8.11.0.tgz. Extracting by manifest.
+55 silly tarball no local data for node-red-dashboard@https://registry.npmjs.org/node-red-dashboard/-/node-red-dashboard-3.6.1.tgz. Extracting by manifest.
+56 silly tarball no local data for vary@https://registry.npmjs.org/vary/-/vary-1.1.2.tgz. Extracting by manifest.
+57 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz. Extracting by manifest.
+58 silly tarball no local data for toidentifier@https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.1.tgz. Extracting by manifest.
+59 silly tarball no local data for statuses@https://registry.npmjs.org/statuses/-/statuses-2.0.1.tgz. Extracting by manifest.
+60 silly tarball no local data for socket.io-parser@https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-4.2.4.tgz. Extracting by manifest.
+61 silly tarball no local data for socket.io-adapter@https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-2.5.2.tgz. Extracting by manifest.
+62 silly tarball no local data for socket.io@https://registry.npmjs.org/socket.io/-/socket.io-4.7.2.tgz. Extracting by manifest.
+63 silly tarball no local data for setprototypeof@https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz. Extracting by manifest.
+64 silly tarball no local data for serve-static@https://registry.npmjs.org/serve-static/-/serve-static-1.15.0.tgz. Extracting by manifest.
+65 silly tarball no local data for serialport@https://registry.npmjs.org/serialport/-/serialport-11.0.1.tgz. Extracting by manifest.
+66 silly tarball no local data for send@https://registry.npmjs.org/send/-/send-0.18.0.tgz. Extracting by manifest.
+67 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+68 silly tarball no local data for range-parser@https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz. Extracting by manifest.
+69 silly tarball no local data for protobufjs@https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.4.tgz. Extracting by manifest.
+70 silly tarball no local data for protobuf-fixed@https://registry.npmjs.org/protobuf-fixed/-/protobuf-fixed-1.0.3.tgz. Extracting by manifest.
+71 silly tarball no local data for parseurl@https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz. Extracting by manifest.
+72 silly tarball no local data for on-headers@https://registry.npmjs.org/on-headers/-/on-headers-1.0.2.tgz. Extracting by manifest.
+73 silly tarball no local data for on-finished@https://registry.npmjs.org/on-finished/-/on-finished-2.4.1.tgz. Extracting by manifest.
+74 silly tarball no local data for object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz. Extracting by manifest.
+75 silly tarball no local data for node-red-node-smooth@https://registry.npmjs.org/node-red-node-smooth/-/node-red-node-smooth-0.1.2.tgz. Extracting by manifest.
+76 silly tarball no local data for node-red-node-serialport@https://registry.npmjs.org/node-red-node-serialport/-/node-red-node-serialport-1.0.4.tgz. Extracting by manifest.
+77 silly tarball no local data for node-red-node-random@https://registry.npmjs.org/node-red-node-random/-/node-red-node-random-0.4.1.tgz. Extracting by manifest.
+78 silly tarball no local data for node-red-node-ping@https://registry.npmjs.org/node-red-node-ping/-/node-red-node-ping-0.3.3.tgz. Extracting by manifest.
+79 silly tarball no local data for node-red-node-pi-gpio@https://registry.npmjs.org/node-red-node-pi-gpio/-/node-red-node-pi-gpio-2.0.6.tgz. Extracting by manifest.
+80 silly tarball no local data for node-red-contrib-play-audio@https://registry.npmjs.org/node-red-contrib-play-audio/-/node-red-contrib-play-audio-2.5.0.tgz. Extracting by manifest.
+81 silly tarball no local data for node-red-contrib-buffer-parser@https://registry.npmjs.org/node-red-contrib-buffer-parser/-/node-red-contrib-buffer-parser-3.2.2.tgz. Extracting by manifest.
+82 silly tarball no local data for node-gyp-build@https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.6.0.tgz. Extracting by manifest.
+83 silly tarball no local data for node-addon-api@https://registry.npmjs.org/node-addon-api/-/node-addon-api-6.1.0.tgz. Extracting by manifest.
+84 silly tarball no local data for negotiator@https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz. Extracting by manifest.
+85 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.1.2.tgz. Extracting by manifest.
+86 silly tarball no local data for mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz. Extracting by manifest.
+87 silly tarball no local data for mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz. Extracting by manifest.
+88 silly tarball no local data for mime@https://registry.npmjs.org/mime/-/mime-1.6.0.tgz. Extracting by manifest.
+89 silly tarball no local data for long@https://registry.npmjs.org/long/-/long-4.0.0.tgz. Extracting by manifest.
+90 silly tarball no local data for jquery@https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz. Extracting by manifest.
+91 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+92 silly tarball no local data for http-errors@https://registry.npmjs.org/http-errors/-/http-errors-2.0.0.tgz. Extracting by manifest.
+93 silly tarball no local data for gridstack@https://registry.npmjs.org/gridstack/-/gridstack-0.6.4.tgz. Extracting by manifest.
+94 silly tarball no local data for etag@https://registry.npmjs.org/etag/-/etag-1.8.1.tgz. Extracting by manifest.
+95 silly tarball no local data for engine.io-parser@https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-5.2.1.tgz. Extracting by manifest.
+96 silly tarball no local data for escape-html@https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz. Extracting by manifest.
+97 silly tarball no local data for engine.io@https://registry.npmjs.org/engine.io/-/engine.io-6.5.3.tgz. Extracting by manifest.
+98 silly tarball no local data for encodeurl@https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz. Extracting by manifest.
+99 silly tarball no local data for ee-first@https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz. Extracting by manifest.
+100 silly tarball no local data for destroy@https://registry.npmjs.org/destroy/-/destroy-1.2.0.tgz. Extracting by manifest.
+101 silly tarball no local data for depd@https://registry.npmjs.org/depd/-/depd-2.0.0.tgz. Extracting by manifest.
+102 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-4.3.4.tgz. Extracting by manifest.
+103 silly tarball no local data for cors@https://registry.npmjs.org/cors/-/cors-2.8.5.tgz. Extracting by manifest.
+104 silly tarball no local data for cookie@https://registry.npmjs.org/cookie/-/cookie-0.4.2.tgz. Extracting by manifest.
+105 silly tarball no local data for compression@https://registry.npmjs.org/compression/-/compression-1.7.4.tgz. Extracting by manifest.
+106 silly tarball no local data for compressible@https://registry.npmjs.org/compressible/-/compressible-2.0.18.tgz. Extracting by manifest.
+107 silly tarball no local data for bytes@https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz. Extracting by manifest.
+108 silly tarball no local data for base64id@https://registry.npmjs.org/base64id/-/base64id-2.0.0.tgz. Extracting by manifest.
+109 silly tarball no local data for accepts@https://registry.npmjs.org/accepts/-/accepts-1.3.8.tgz. Extracting by manifest.
+110 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-20.8.9.tgz. Extracting by manifest.
+111 silly tarball no local data for @types/long@https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz. Extracting by manifest.
+112 silly tarball no local data for @types/cors@https://registry.npmjs.org/@types/cors/-/cors-2.8.15.tgz. Extracting by manifest.
+113 silly tarball no local data for @types/cookie@https://registry.npmjs.org/@types/cookie/-/cookie-0.4.1.tgz. Extracting by manifest.
+114 silly tarball no local data for @socket.io/component-emitter@https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz. Extracting by manifest.
+115 silly tarball no local data for @serialport/stream@https://registry.npmjs.org/@serialport/stream/-/stream-11.0.1.tgz. Extracting by manifest.
+116 silly tarball no local data for @serialport/parser-spacepacket@https://registry.npmjs.org/@serialport/parser-spacepacket/-/parser-spacepacket-11.0.1.tgz. Extracting by manifest.
+117 silly tarball no local data for @serialport/parser-slip-encoder@https://registry.npmjs.org/@serialport/parser-slip-encoder/-/parser-slip-encoder-11.0.1.tgz. Extracting by manifest.
+118 silly tarball no local data for @serialport/parser-regex@https://registry.npmjs.org/@serialport/parser-regex/-/parser-regex-11.0.1.tgz. Extracting by manifest.
+119 silly tarball no local data for @serialport/parser-ready@https://registry.npmjs.org/@serialport/parser-ready/-/parser-ready-11.0.1.tgz. Extracting by manifest.
+120 silly tarball no local data for @serialport/parser-readline@https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.1.tgz. Extracting by manifest.
+121 silly tarball no local data for @serialport/parser-packet-length@https://registry.npmjs.org/@serialport/parser-packet-length/-/parser-packet-length-11.0.1.tgz. Extracting by manifest.
+122 silly tarball no local data for @serialport/parser-inter-byte-timeout@https://registry.npmjs.org/@serialport/parser-inter-byte-timeout/-/parser-inter-byte-timeout-11.0.1.tgz. Extracting by manifest.
+123 silly tarball no local data for @serialport/parser-delimiter@https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.1.tgz. Extracting by manifest.
+124 silly tarball no local data for @serialport/parser-cctalk@https://registry.npmjs.org/@serialport/parser-cctalk/-/parser-cctalk-11.0.1.tgz. Extracting by manifest.
+125 silly tarball no local data for @serialport/parser-byte-length@https://registry.npmjs.org/@serialport/parser-byte-length/-/parser-byte-length-11.0.1.tgz. Extracting by manifest.
+126 silly tarball no local data for @serialport/bindings-interface@https://registry.npmjs.org/@serialport/bindings-interface/-/bindings-interface-1.2.2.tgz. Extracting by manifest.
+127 silly tarball no local data for @serialport/bindings-cpp@https://registry.npmjs.org/@serialport/bindings-cpp/-/bindings-cpp-11.0.3.tgz. Extracting by manifest.
+128 silly tarball no local data for @serialport/binding-mock@https://registry.npmjs.org/@serialport/binding-mock/-/binding-mock-10.2.2.tgz. Extracting by manifest.
+129 silly tarball no local data for @protobufjs/utf8@https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz. Extracting by manifest.
+130 silly tarball no local data for @protobufjs/pool@https://registry.npmjs.org/@protobufjs/pool/-/pool-1.1.0.tgz. Extracting by manifest.
+131 silly tarball no local data for @protobufjs/path@https://registry.npmjs.org/@protobufjs/path/-/path-1.1.2.tgz. Extracting by manifest.
+132 silly tarball no local data for @protobufjs/inquire@https://registry.npmjs.org/@protobufjs/inquire/-/inquire-1.1.0.tgz. Extracting by manifest.
+133 silly tarball no local data for @protobufjs/float@https://registry.npmjs.org/@protobufjs/float/-/float-1.0.2.tgz. Extracting by manifest.
+134 silly tarball no local data for @protobufjs/fetch@https://registry.npmjs.org/@protobufjs/fetch/-/fetch-1.1.0.tgz. Extracting by manifest.
+135 silly tarball no local data for @protobufjs/eventemitter@https://registry.npmjs.org/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz. Extracting by manifest.
+136 silly tarball no local data for @protobufjs/codegen@https://registry.npmjs.org/@protobufjs/codegen/-/codegen-2.0.4.tgz. Extracting by manifest.
+137 silly tarball no local data for @protobufjs/base64@https://registry.npmjs.org/@protobufjs/base64/-/base64-1.1.2.tgz. Extracting by manifest.
+138 silly tarball no local data for @protobufjs/aspromise@https://registry.npmjs.org/@protobufjs/aspromise/-/aspromise-1.1.2.tgz. Extracting by manifest.
+139 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.1.3.tgz. Extracting by manifest.
+140 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.0.0.tgz. Extracting by manifest.
+141 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-2.6.9.tgz. Extracting by manifest.
+142 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-2.6.9.tgz. Extracting by manifest.
+143 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.0.0.tgz. Extracting by manifest.
+144 silly tarball no local data for @serialport/parser-readline@https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.0.tgz. Extracting by manifest.
+145 silly tarball no local data for @serialport/parser-delimiter@https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.0.tgz. Extracting by manifest.
+146 silly tarball no local data for fresh@https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz. Extracting by manifest.
+147 http fetch GET 200 https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.1.tgz 3118ms (cache miss)
+148 timing reifyNode:node_modules/toidentifier Completed in 3323ms
+149 http fetch GET 200 https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz 3104ms (cache miss)
+150 timing reifyNode:node_modules/setprototypeof Completed in 3327ms
+151 http fetch GET 200 https://registry.npmjs.org/statuses/-/statuses-2.0.1.tgz 3168ms (cache miss)
+152 timing reifyNode:node_modules/statuses Completed in 3374ms
+153 http fetch GET 200 https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz 3144ms (cache miss)
+154 timing reifyNode:node_modules/range-parser Completed in 3382ms
+155 http fetch GET 200 https://registry.npmjs.org/vary/-/vary-1.1.2.tgz 3235ms (cache miss)
+156 timing reifyNode:node_modules/vary Completed in 3433ms
+157 http fetch GET 200 https://registry.npmjs.org/serialport/-/serialport-11.0.1.tgz 3204ms (cache miss)
+158 timing reifyNode:node_modules/serialport Completed in 3434ms
+159 http fetch GET 200 https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz 3186ms (cache miss)
+160 timing reifyNode:node_modules/parseurl Completed in 3436ms
+161 http fetch GET 200 https://registry.npmjs.org/on-headers/-/on-headers-1.0.2.tgz 3189ms (cache miss)
+162 timing reifyNode:node_modules/on-headers Completed in 3443ms
+163 http fetch GET 200 https://registry.npmjs.org/ws/-/ws-8.11.0.tgz 3341ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/on-finished/-/on-finished-2.4.1.tgz 3255ms (cache miss)
+165 timing reifyNode:node_modules/on-finished Completed in 3512ms
+166 http fetch GET 200 https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 3254ms (cache miss)
+167 timing reifyNode:node_modules/object-assign Completed in 3514ms
+168 http fetch GET 200 https://registry.npmjs.org/node-red-node-random/-/node-red-node-random-0.4.1.tgz 3230ms (cache miss)
+169 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-play-audio/-/node-red-contrib-play-audio-2.5.0.tgz 3220ms (cache miss)
+170 timing reifyNode:node_modules/node-red-node-random Completed in 3516ms
+171 timing reifyNode:node_modules/node-red-contrib-play-audio Completed in 3516ms
+172 http fetch GET 200 https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-2.5.2.tgz 3307ms (cache miss)
+173 timing reifyNode:node_modules/socket.io-adapter Completed in 3521ms
+174 http fetch GET 200 https://registry.npmjs.org/node-red-node-smooth/-/node-red-node-smooth-0.1.2.tgz 3273ms (cache miss)
+175 timing reifyNode:node_modules/node-red-node-smooth Completed in 3550ms
+176 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.2.tgz 3221ms (cache miss)
+177 timing reifyNode:node_modules/ms Completed in 3552ms
+178 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 3198ms (cache miss)
+179 timing reifyNode:node_modules/inherits Completed in 3556ms
+180 http fetch GET 200 https://registry.npmjs.org/http-errors/-/http-errors-2.0.0.tgz 3197ms (cache miss)
+181 timing reifyNode:node_modules/http-errors Completed in 3556ms
+182 http fetch GET 200 https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz 3131ms (cache miss)
+183 timing reifyNode:node_modules/encodeurl Completed in 3558ms
+184 http fetch GET 200 https://registry.npmjs.org/etag/-/etag-1.8.1.tgz 3166ms (cache miss)
+185 timing reifyNode:node_modules/etag Completed in 3560ms
+186 http fetch GET 200 https://registry.npmjs.org/compressible/-/compressible-2.0.18.tgz 3107ms (cache miss)
+187 timing reifyNode:node_modules/compressible Completed in 3562ms
+188 http fetch GET 200 https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz 3147ms (cache miss)
+189 timing reifyNode:node_modules/escape-html Completed in 3568ms
+190 http fetch GET 200 https://registry.npmjs.org/@types/cookie/-/cookie-0.4.1.tgz 3075ms (cache miss)
+191 timing reifyNode:node_modules/@types/cookie Completed in 3566ms
+192 http fetch GET 200 https://registry.npmjs.org/serve-static/-/serve-static-1.15.0.tgz 3364ms (cache miss)
+193 timing reifyNode:node_modules/serve-static Completed in 3590ms
+194 http fetch GET 200 https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz 3159ms (cache miss)
+195 timing reifyNode:node_modules/ee-first Completed in 3590ms
+196 http fetch GET 200 https://registry.npmjs.org/cookie/-/cookie-0.4.2.tgz 3145ms (cache miss)
+197 timing reifyNode:node_modules/cookie Completed in 3592ms
+198 http fetch GET 200 https://registry.npmjs.org/compression/-/compression-1.7.4.tgz 3142ms (cache miss)
+199 timing reifyNode:node_modules/compression Completed in 3594ms
+200 http fetch GET 200 https://registry.npmjs.org/accepts/-/accepts-1.3.8.tgz 3128ms (cache miss)
+201 timing reifyNode:node_modules/accepts Completed in 3594ms
+202 http fetch GET 200 https://registry.npmjs.org/base64id/-/base64id-2.0.0.tgz 3133ms (cache miss)
+203 timing reifyNode:node_modules/base64id Completed in 3595ms
+204 http fetch GET 200 https://registry.npmjs.org/destroy/-/destroy-1.2.0.tgz 3165ms (cache miss)
+205 timing reifyNode:node_modules/destroy Completed in 3599ms
+206 http fetch GET 200 https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz 3141ms (cache miss)
+207 timing reifyNode:node_modules/bytes Completed in 3599ms
+208 timing reifyNode:node_modules/ws Completed in 3624ms
+209 http fetch GET 200 https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz 3295ms (cache miss)
+210 timing reifyNode:node_modules/negotiator Completed in 3622ms
+211 http fetch GET 200 https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.6.0.tgz 3321ms (cache miss)
+212 timing reifyNode:node_modules/node-gyp-build Completed in 3625ms
+213 http fetch GET 200 https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz 3133ms (cache miss)
+214 timing reifyNode:node_modules/@socket.io/component-emitter Completed in 3627ms
+215 http fetch GET 200 https://registry.npmjs.org/@types/cors/-/cors-2.8.15.tgz 3143ms (cache miss)
+216 timing reifyNode:node_modules/@types/cors Completed in 3629ms
+217 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 3414ms (cache miss)
+218 timing reifyNode:node_modules/safe-buffer Completed in 3650ms
+219 http fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 3315ms (cache miss)
+220 timing reifyNode:node_modules/mime-types Completed in 3652ms
+221 http fetch GET 200 https://registry.npmjs.org/@serialport/stream/-/stream-11.0.1.tgz 3169ms (cache miss)
+222 timing reifyNode:node_modules/@serialport/stream Completed in 3678ms
+223 http fetch GET 200 https://registry.npmjs.org/cors/-/cors-2.8.5.tgz 3262ms (cache miss)
+224 timing reifyNode:node_modules/cors Completed in 3706ms
+225 http fetch GET 200 https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz 3134ms (cache miss)
+226 timing reifyNode:node_modules/@protobufjs/utf8 Completed in 3704ms
+227 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-cctalk/-/parser-cctalk-11.0.1.tgz 3183ms (cache miss)
+228 timing reifyNode:node_modules/@serialport/parser-cctalk Completed in 3726ms
+229 http fetch GET 200 https://registry.npmjs.org/depd/-/depd-2.0.0.tgz 3314ms (cache miss)
+230 timing reifyNode:node_modules/depd Completed in 3752ms
+231 http fetch GET 200 https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz 3284ms (cache miss)
+232 timing reifyNode:node_modules/@types/long Completed in 3768ms
+233 http fetch GET 200 https://registry.npmjs.org/@serialport/bindings-interface/-/bindings-interface-1.2.2.tgz 3217ms (cache miss)
+234 timing reifyNode:node_modules/@serialport/bindings-interface Completed in 3768ms
+235 http fetch GET 200 https://registry.npmjs.org/@protobufjs/pool/-/pool-1.1.0.tgz 3194ms (cache miss)
+236 timing reifyNode:node_modules/@protobufjs/pool Completed in 3769ms
+237 http fetch GET 200 https://registry.npmjs.org/send/-/send-0.18.0.tgz 3556ms (cache miss)
+238 timing reifyNode:node_modules/send Completed in 3789ms
+239 http fetch GET 200 https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-4.2.4.tgz 3597ms (cache miss)
+240 http fetch GET 200 https://registry.npmjs.org/@protobufjs/path/-/path-1.1.2.tgz 3230ms (cache miss)
+241 timing reifyNode:node_modules/@protobufjs/path Completed in 3807ms
+242 http fetch GET 200 https://registry.npmjs.org/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz 3199ms (cache miss)
+243 timing reifyNode:node_modules/@protobufjs/eventemitter Completed in 3809ms
+244 http fetch GET 200 https://registry.npmjs.org/@protobufjs/codegen/-/codegen-2.0.4.tgz 3197ms (cache miss)
+245 timing reifyNode:node_modules/@protobufjs/codegen Completed in 3810ms
+246 http fetch GET 200 https://registry.npmjs.org/@serialport/binding-mock/-/binding-mock-10.2.2.tgz 3246ms (cache miss)
+247 timing reifyNode:node_modules/@serialport/binding-mock Completed in 3813ms
+248 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-4.3.4.tgz 3385ms (cache miss)
+249 timing reifyNode:node_modules/debug Completed in 3827ms
+250 http fetch GET 200 https://registry.npmjs.org/@protobufjs/float/-/float-1.0.2.tgz 3238ms (cache miss)
+251 timing reifyNode:node_modules/@protobufjs/float Completed in 3823ms
+252 http fetch GET 200 https://registry.npmjs.org/@protobufjs/inquire/-/inquire-1.1.0.tgz 3243ms (cache miss)
+253 timing reifyNode:node_modules/@protobufjs/inquire Completed in 3825ms
+254 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-inter-byte-timeout/-/parser-inter-byte-timeout-11.0.1.tgz 3292ms (cache miss)
+255 timing reifyNode:node_modules/@serialport/parser-inter-byte-timeout Completed in 3828ms
+256 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 3204ms (cache miss)
+257 timing reifyNode:node_modules/send/node_modules/ms Completed in 3837ms
+258 timing reifyNode:node_modules/socket.io-parser Completed in 3850ms
+259 http fetch GET 200 https://registry.npmjs.org/node-red-node-ping/-/node-red-node-ping-0.3.3.tgz 3562ms (cache miss)
+260 timing reifyNode:node_modules/node-red-node-ping Completed in 3850ms
+261 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-regex/-/parser-regex-11.0.1.tgz 3335ms (cache miss)
+262 timing reifyNode:node_modules/@serialport/parser-regex Completed in 3856ms
+263 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-slip-encoder/-/parser-slip-encoder-11.0.1.tgz 3340ms (cache miss)
+264 timing reifyNode:node_modules/@serialport/parser-slip-encoder Completed in 3857ms
+265 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-ready/-/parser-ready-11.0.1.tgz 3334ms (cache miss)
+266 timing reifyNode:node_modules/@serialport/parser-ready Completed in 3859ms
+267 http fetch GET 200 https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz 3194ms (cache miss)
+268 timing reifyNode:node_modules/fresh Completed in 3865ms
+269 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-spacepacket/-/parser-spacepacket-11.0.1.tgz 3367ms (cache miss)
+270 timing reifyNode:node_modules/@serialport/parser-spacepacket Completed in 3880ms
+271 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-packet-length/-/parser-packet-length-11.0.1.tgz 3351ms (cache miss)
+272 timing reifyNode:node_modules/@serialport/parser-packet-length Completed in 3884ms
+273 http fetch GET 200 https://registry.npmjs.org/@protobufjs/aspromise/-/aspromise-1.1.2.tgz 3262ms (cache miss)
+274 timing reifyNode:node_modules/@protobufjs/aspromise Completed in 3882ms
+275 http fetch GET 200 https://registry.npmjs.org/@protobufjs/base64/-/base64-1.1.2.tgz 3268ms (cache miss)
+276 timing reifyNode:node_modules/@protobufjs/base64 Completed in 3884ms
+277 http fetch GET 200 https://registry.npmjs.org/@protobufjs/fetch/-/fetch-1.1.0.tgz 3292ms (cache miss)
+278 timing reifyNode:node_modules/@protobufjs/fetch Completed in 3898ms
+279 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.1.tgz 3372ms (cache miss)
+280 timing reifyNode:node_modules/@serialport/parser-readline Completed in 3901ms
+281 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 3273ms (cache miss)
+282 timing reifyNode:node_modules/send/node_modules/debug/node_modules/ms Completed in 3910ms
+283 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 3277ms (cache miss)
+284 timing reifyNode:node_modules/compression/node_modules/ms Completed in 3920ms
+285 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-byte-length/-/parser-byte-length-11.0.1.tgz 3373ms (cache miss)
+286 timing reifyNode:node_modules/@serialport/parser-byte-length Completed in 3919ms
+287 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.1.tgz 3384ms (cache miss)
+288 timing reifyNode:node_modules/@serialport/parser-delimiter Completed in 3922ms
+289 http fetch GET 200 https://registry.npmjs.org/node-red-node-serialport/-/node-red-node-serialport-1.0.4.tgz 3657ms (cache miss)
+290 timing reifyNode:node_modules/node-red-node-serialport Completed in 3936ms
+291 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 3314ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 3632ms (cache miss)
+293 timing reifyNode:node_modules/mime-db Completed in 3974ms
+294 timing reifyNode:node_modules/send/node_modules/debug Completed in 3986ms
+295 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-delimiter/-/parser-delimiter-11.0.0.tgz 3317ms (cache miss)
+296 timing reifyNode:node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-delimiter Completed in 3979ms
+297 http fetch GET 200 https://registry.npmjs.org/mime/-/mime-1.6.0.tgz 3668ms (cache miss)
+298 timing reifyNode:node_modules/mime Completed in 4014ms
+299 http fetch GET 200 https://registry.npmjs.org/protobuf-fixed/-/protobuf-fixed-1.0.3.tgz 3776ms (cache miss)
+300 timing reifyNode:node_modules/protobuf-fixed Completed in 4022ms
+301 http fetch GET 200 https://registry.npmjs.org/@serialport/parser-readline/-/parser-readline-11.0.0.tgz 3412ms (cache miss)
+302 timing reifyNode:node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-readline Completed in 4056ms
+303 http fetch GET 200 https://registry.npmjs.org/long/-/long-4.0.0.tgz 3740ms (cache miss)
+304 timing reifyNode:node_modules/long Completed in 4090ms
+305 http fetch GET 200 https://registry.npmjs.org/node-red-node-pi-gpio/-/node-red-node-pi-gpio-2.0.6.tgz 3804ms (cache miss)
+306 timing reifyNode:node_modules/node-red-node-pi-gpio Completed in 4096ms
+307 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 3471ms (cache miss)
+308 timing reifyNode:node_modules/compression/node_modules/debug Completed in 4110ms
+309 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz 3923ms (cache miss)
+310 timing reifyNode:node_modules/undici-types Completed in 4123ms
+311 http fetch GET 200 https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-5.2.1.tgz 3722ms (cache miss)
+312 timing reifyNode:node_modules/engine.io-parser Completed in 4147ms
+313 http fetch GET 200 https://registry.npmjs.org/engine.io/-/engine.io-6.5.3.tgz 3789ms (cache miss)
+314 timing reifyNode:node_modules/engine.io Completed in 4212ms
+315 http fetch GET 200 https://registry.npmjs.org/node-addon-api/-/node-addon-api-6.1.0.tgz 3896ms (cache miss)
+316 timing reifyNode:node_modules/node-addon-api Completed in 4220ms
+317 http fetch GET 200 https://registry.npmjs.org/gridstack/-/gridstack-0.6.4.tgz 4071ms (cache miss)
+318 timing reifyNode:node_modules/gridstack Completed in 4458ms
+319 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-buffer-parser/-/node-red-contrib-buffer-parser-3.2.2.tgz 4227ms (cache miss)
+320 timing reifyNode:node_modules/node-red-contrib-buffer-parser Completed in 4526ms
+321 http fetch GET 200 https://registry.npmjs.org/socket.io/-/socket.io-4.7.2.tgz 4362ms (cache miss)
+322 timing reifyNode:node_modules/socket.io Completed in 4584ms
+323 http fetch GET 200 https://registry.npmjs.org/@serialport/bindings-cpp/-/bindings-cpp-11.0.3.tgz 4221ms (cache miss)
+324 timing reifyNode:node_modules/@serialport/bindings-cpp Completed in 4778ms
+325 http fetch GET 200 https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz 4577ms (cache miss)
+326 timing reifyNode:node_modules/jquery Completed in 4931ms
+327 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-20.8.9.tgz 4892ms (cache miss)
+328 timing reifyNode:node_modules/@types/node Completed in 5366ms
+329 http fetch GET 200 https://registry.npmjs.org/node-red-dashboard/-/node-red-dashboard-3.6.1.tgz 5227ms (cache miss)
+330 timing reifyNode:node_modules/node-red-dashboard Completed in 5406ms
+331 http fetch GET 200 https://registry.npmjs.org/protobufjs/-/protobufjs-6.11.4.tgz 8428ms (cache miss)
+332 timing reifyNode:node_modules/protobufjs Completed in 8671ms
+333 timing reify:unpack Completed in 8678ms
+334 timing reify:unretire Completed in 1ms
+335 timing build:queue Completed in 18ms
+336 timing build:link:node_modules/mime Completed in 18ms
+337 timing build:link:node_modules/node-gyp-build Completed in 17ms
+338 timing build:link:node_modules/protobufjs Completed in 16ms
+339 timing build:link Completed in 19ms
+340 info run @serialport/bindings-cpp@11.0.3 install node_modules/@serialport/bindings-cpp node-gyp-build
+341 info run @serialport/bindings-cpp@11.0.3 install { code: 0, signal: null }
+342 timing build:run:install:node_modules/@serialport/bindings-cpp Completed in 330ms
+343 timing build:run:install Completed in 333ms
+344 info run protobufjs@6.11.4 postinstall node_modules/protobufjs node scripts/postinstall
+345 info run protobufjs@6.11.4 postinstall { code: 0, signal: null }
+346 timing build:run:postinstall:node_modules/protobufjs Completed in 153ms
+347 timing build:run:postinstall Completed in 153ms
+348 timing build:deps Completed in 526ms
+349 timing build Completed in 528ms
+350 timing reify:build Completed in 530ms
+351 timing reify:trash Completed in 0ms
+352 timing reify:save Completed in 83ms
+353 timing reify Completed in 10806ms
+354 silly ADD node_modules/node-red-dashboard
+355 silly ADD node_modules/ws
+356 silly ADD node_modules/vary
+357 silly ADD node_modules/undici-types
+358 silly ADD node_modules/toidentifier
+359 silly ADD node_modules/statuses
+360 silly ADD node_modules/socket.io-parser
+361 silly ADD node_modules/socket.io-adapter
+362 silly ADD node_modules/socket.io
+363 silly ADD node_modules/setprototypeof
+364 silly ADD node_modules/serve-static
+365 silly ADD node_modules/serialport
+366 silly ADD node_modules/send
+367 silly ADD node_modules/send/node_modules/ms
+368 silly ADD node_modules/send/node_modules/debug
+369 silly ADD node_modules/send/node_modules/debug/node_modules/ms
+370 silly ADD node_modules/safe-buffer
+371 silly ADD node_modules/range-parser
+372 silly ADD node_modules/protobufjs
+373 silly ADD node_modules/protobuf-fixed
+374 silly ADD node_modules/parseurl
+375 silly ADD node_modules/on-headers
+376 silly ADD node_modules/on-finished
+377 silly ADD node_modules/object-assign
+378 silly ADD node_modules/node-red-node-smooth
+379 silly ADD node_modules/node-red-node-serialport
+380 silly ADD node_modules/node-red-node-random
+381 silly ADD node_modules/node-red-node-ping
+382 silly ADD node_modules/node-red-node-pi-gpio
+383 silly ADD node_modules/node-red-contrib-play-audio
+384 silly ADD node_modules/node-red-contrib-buffer-parser
+385 silly ADD node_modules/node-gyp-build
+386 silly ADD node_modules/node-addon-api
+387 silly ADD node_modules/negotiator
+388 silly ADD node_modules/ms
+389 silly ADD node_modules/mime-types
+390 silly ADD node_modules/mime-db
+391 silly ADD node_modules/mime
+392 silly ADD node_modules/long
+393 silly ADD node_modules/jquery
+394 silly ADD node_modules/inherits
+395 silly ADD node_modules/http-errors
+396 silly ADD node_modules/gridstack
+397 silly ADD node_modules/fresh
+398 silly ADD node_modules/etag
+399 silly ADD node_modules/escape-html
+400 silly ADD node_modules/engine.io-parser
+401 silly ADD node_modules/engine.io
+402 silly ADD node_modules/encodeurl
+403 silly ADD node_modules/ee-first
+404 silly ADD node_modules/destroy
+405 silly ADD node_modules/depd
+406 silly ADD node_modules/debug
+407 silly ADD node_modules/cors
+408 silly ADD node_modules/cookie
+409 silly ADD node_modules/compression
+410 silly ADD node_modules/compression/node_modules/ms
+411 silly ADD node_modules/compression/node_modules/debug
+412 silly ADD node_modules/compressible
+413 silly ADD node_modules/bytes
+414 silly ADD node_modules/base64id
+415 silly ADD node_modules/accepts
+416 silly ADD node_modules/@types/node
+417 silly ADD node_modules/@types/long
+418 silly ADD node_modules/@types/cors
+419 silly ADD node_modules/@types/cookie
+420 silly ADD node_modules/@socket.io/component-emitter
+421 silly ADD node_modules/@serialport/stream
+422 silly ADD node_modules/@serialport/parser-spacepacket
+423 silly ADD node_modules/@serialport/parser-slip-encoder
+424 silly ADD node_modules/@serialport/parser-regex
+425 silly ADD node_modules/@serialport/parser-ready
+426 silly ADD node_modules/@serialport/parser-readline
+427 silly ADD node_modules/@serialport/parser-packet-length
+428 silly ADD node_modules/@serialport/parser-inter-byte-timeout
+429 silly ADD node_modules/@serialport/parser-delimiter
+430 silly ADD node_modules/@serialport/parser-cctalk
+431 silly ADD node_modules/@serialport/parser-byte-length
+432 silly ADD node_modules/@serialport/bindings-interface
+433 silly ADD node_modules/@serialport/bindings-cpp
+434 silly ADD node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-readline
+435 silly ADD node_modules/@serialport/bindings-cpp/node_modules/@serialport/parser-delimiter
+436 silly ADD node_modules/@serialport/binding-mock
+437 silly ADD node_modules/@protobufjs/utf8
+438 silly ADD node_modules/@protobufjs/pool
+439 silly ADD node_modules/@protobufjs/path
+440 silly ADD node_modules/@protobufjs/inquire
+441 silly ADD node_modules/@protobufjs/float
+442 silly ADD node_modules/@protobufjs/fetch
+443 silly ADD node_modules/@protobufjs/eventemitter
+444 silly ADD node_modules/@protobufjs/codegen
+445 silly ADD node_modules/@protobufjs/base64
+446 silly ADD node_modules/@protobufjs/aspromise
+447 timing command:install Completed in 10827ms
+448 verbose exit 0
+449 timing npm Completed in 11351ms
+450 info ok
